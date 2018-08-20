@@ -21,6 +21,7 @@ public class Menu {
                 System.err.println("Podano nieprawidłową opcję!");
                 System.err.println("Spróbuj jeszcze raz");
                 userInput = scan.nextLine();
+                userInput = userInput.toUpperCase();
             }
     }
 }
