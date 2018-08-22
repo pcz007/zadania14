@@ -2,11 +2,12 @@ package Zadanie14_2;
 
 import java.util.Comparator;
 
-public class FirstNameComparator implements Comparable<Person> {
+public class FirstNameComparator implements Comparator<Person> {
 
     @Override
-    public int compareTo(Person p) {
-
-        return 0;
+    public int compare(Person p1, Person p2) {
+        String firstName = p1.getFirstName();
+        String firstName2 = p2.getFirstName();
+        return firstName.compareTo(firstName2);
     }
 }
